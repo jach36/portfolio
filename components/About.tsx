@@ -34,6 +34,7 @@ const skillGroups = [
       "Git",
       "Linux",
       "JFrog Artifactory",
+      "Vercel",
       "REST APIs",
     ],
   },
