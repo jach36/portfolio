@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #1c1c1e;
+  --foreground: #c4c8ce;
+  --card: #141416;
+  --panel: #1c1c1c;
+  --panel-border: #333333;
+  --border: rgb(255 255 255 / 24%);
+  --muted: #99a1af;
+  --copy: #d1d5dc;
+  --chip: rgb(255 255 255 / 10%);
+  --contrast: #ffffff;
+  --on-contrast: #000000;
+  --button-hover: #e5e7eb;
+  --nav: rgb(28 28 30 / 95%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: #e3e3e1;
+  --foreground: #3b3731;
+  --card: #ebebe9;
+  --panel: #e3e3e3;
+  --panel-border: #cccccc;
+  --border: rgb(0 0 0 / 24%);
+  --muted: #665e50;
+  --copy: #2e2a23;
+  --chip: rgb(0 0 0 / 10%);
+  --contrast: #000000;
+  --on-contrast: #ffffff;
+  --button-hover: #1a1814;
+  --nav: rgb(227 227 225 / 95%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-panel: var(--panel);
+  --color-panel-border: var(--panel-border);
+  --color-outline: var(--border);
+  --color-muted: var(--muted);
+  --color-copy: var(--copy);
+  --color-chip: var(--chip);
+  --color-contrast: var(--contrast);
+  --color-on-contrast: var(--on-contrast);
+  --color-button-hover: var(--button-hover);
+  --color-nav: var(--nav);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.theme-label-dark { display: none; }
+:root[data-theme="light"] .theme-label-dark { display: inline; }
+:root[data-theme="light"] .theme-label-light { display: none; }
