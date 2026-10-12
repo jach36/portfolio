@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import { Analytics } from "@vercel/analytics/next"
 
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Projects />
         <About />
         <Contact />
+        <Analytics/>
       </main>
   );
 }
